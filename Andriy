@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Андрей Савляк - Киберспортсмен</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      background-color: #0e0e0e;
+      color: white;
+      overflow-x: hidden;
+    }
+    .header {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      text-align: center;
+      background: linear-gradient(135deg, #333, #000);
+      color: #fff;
+      animation: fadeIn 3s ease-in-out;
+    }
+    .header h1 {
+      font-size: 4rem;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      animation: slideIn 3s ease-in-out;
+    }
+    .header p {
+      font-size: 1.2rem;
+      margin-top: 20px;
+      opacity: 0;
+      animation: fadeInText 3s 2s forwards;
+    }
+    .profile-section {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 50px;
+      animation: fadeIn 4s ease-in-out;
+    }
+    .profile-section .info {
+      width: 50%;
+      font-size: 1.1rem;
+      line-height: 1.8;
+    }
+    .profile-section .image {
+      width: 40%;
+      text-align: center;
+    }
+    .profile-section .image img {
+      max-width: 100%;
+      border-radius: 20px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+      animation: zoomIn 2s ease-in-out;
+    }
+    .social-links {
+      display: flex;
+      justify-content: center;
+      margin-top: 40px;
+      font-size: 1.5rem;
+    }
+    .social-links a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: white;
+      transition: color 0.3s;
+    }
+    .social-links a:hover {
+      color: #ff5733;
+    }
+
+    @keyframes fadeIn {
+      0% { opacity: 0; }
+      100% { opacity: 1; }
+    }
+    @keyframes fadeInText {
+      0% { opacity: 0; }
+      100% { opacity: 1; }
+    }
+    @keyframes slideIn {
+      0% { transform: translateY(-50px); opacity: 0; }
+      100% { transform: translateY(0); opacity: 1; }
+    }
+    @keyframes zoomIn {
+      0% { transform: scale(0.8); opacity: 0; }
+      100% { transform: scale(1); opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <div>
+      <h1>Андрей Савляк</h1>
+      <p>Киберспортсмен в Counter Strike 2</p>
+    </div>
+  </div>
+
+  <div class="profile-section">
+    <div class="info">
+      <h2>О Андрее</h2>
+      <p>Андрей Савляк родился в селе Костилевка. На данный момент ему 16 лет, и он уже зарекомендовал себя как один из лучших игроков в мире. В 2021 году он завоевал титул MAJOR, а сам Саша "Симпл" выразил уважение к его игре.</p>
+      <p>Андрей – это настоящая звезда киберспорта. Его талант в Counter Strike 2 невозможно не заметить, и его достижения только начинают расти.</p>
+    </div>
+    <div class="image">
+      <img src="file:///C:/Users/Arturka240kmh/Pictures/Camera%20Roll/andrey_photo.jpg" alt="Андрей Савляк в игре">
+    </div>
+  </div>
+
+  <div class="social-links">
+    <a href="https://instagram.com/_a.n.d.r.y.u.h.a_" target="_blank">Instagram</a>
+  </div>
+</body>
+</html>
